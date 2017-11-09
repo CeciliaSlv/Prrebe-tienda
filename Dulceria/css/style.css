@@ -1,0 +1,21 @@
+  body {
+    background-image: url(../img/fondo1.jpg) ;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    .Fondo{
+      background-image: url(../img/fondo1.jpg) ;
+    }
+    .Fondo3{
+      background-image: url(../img/fondo4.jpg) ;
+    }
+    #miCanvas{
+    border:dotted 2px yellow;
+    background:green;
+}

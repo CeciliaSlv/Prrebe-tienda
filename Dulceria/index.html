@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Matamis Vékony</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="slider fullscreen">
+		<ul class="slides">
+			<li>
+				<img class="responsive-img" src="img/First.gif"> <!-- random image -->
+				<div class="caption left-align">
+					<div class="row">
+						<div class="col s12 m10 l7 xl6">
+							<h3 class="center-align " font-family="Times New Roman">Matamis Vékony</h3>
+							<h5 class="light grey-text text-lighten-3">Food & Good</h5>
+							<form action="ingresar.php" class="form_signin" method="POST">
+								<h6>Nombre de usuario</h6>
+								<input type="text" name="nombre" required autofocus >
+								<h6>Contraseña</h6>
+								<input type="password" name="contraseña" required>
+								<div class="row center-align">
+									<div class="col l6 m6 s12 ">
+										<br>
+										<a id="registrar" class="btn waves-effect white black-text darken-text-2 " href="./php/registro.php">Registrarse</a>
+									</div>
+									<div class="col l6 m6 s12">
+										<br>
+										<a id="iniciarsesion" class="btn waves-effect white black-text darken-text-2" href="./php/iniciarsesion.php">Iniciar sesion</a>
+									</div>
+									<div class="col l12 s12 m12">
+										<br>
+										<a id="iniciarsesion" class="btn waves-effect white black-text darken-text-2" href="productos.html">Entrar sin iniciar sesion</a>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script src="js/app.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.slider').slider();
+	});
+</script>
+<!--<SCRIPT type="text/javascript">
+      function mi_onload() {
+         . . .
+      }
+
+      var ventana = window.open("sources/OXXO.mp4")
+      if (ventana) ventana.onload = mi_onload
+</SCRIPT>-->
+</html>
