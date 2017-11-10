@@ -1,6 +1,4 @@
   body {
-    background-image: url(../img/fondo1.jpg) ;
-    background-repeat: no-repeat;
     background-size:cover;
     display: flex;
     min-height: 100vh;
@@ -14,8 +12,8 @@
     }
     .Fondo3{
       background-image: url(../img/fondo4.jpg) ;
+
     }
     #miCanvas{
-    border:dotted 2px yellow;
-    background:green;
-}
+    background:url(../img/fondo2.jpg);
+    }

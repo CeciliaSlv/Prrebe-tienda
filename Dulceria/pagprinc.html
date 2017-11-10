@@ -9,16 +9,16 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body class="Fondo">
+<body bgcolor="black">
     <nav>
         <div class="nav-wrapper black">
 
             <div class="container left-align">
-              <a href="#!" class="brand-logo" >Recetas</a>  
+              <a href="#!" class="brand-logo" >Matamis Vékony</a>  
           </div>
           <ul class="right hide-on-med-and-down">
-            <li><a class="waves-effect" href="pagprinc.html">Inicio</a></li>
             <li><a class="waves-effect" href="productos.html">Productos</a></li>
+            <li><a class="waves-effect" href="recetas.html">Recetas</a></li>
             <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
         </ul>
         <ul id="slide-out" class="side-nav">
@@ -42,23 +42,62 @@
             <a href="#!name"><span class="white-text name">John Doe</span></a>
             <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
         </div></li>
-        <li><a href="index.html"><i class="material-icons active">cloud</i>Recetas</a></li>
-        <li><a class="waves-effect" href="pagprinc.html">Inicio</a></li>
-            <li><a class="waves-effect" href="productos.html">Productos</a></li>
-            <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
+
+        <li><a href="pagprinc.html"><i class="material-icons">cloud</i>Inicio</a></li>
+        <li><a class="waves-effect" href="productos.html">Productos</a></li>
+        <li><a class="waves-effect" href="recetas.html">Recetas</a></li>
+        <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
         <li><div class="divider"></div></li>
-        <li><a class="waves-effect" href="mobile.html">Cerrar Sesión</a></li>
+        <li><a class="waves-effect" href="index.html">Cerrar Sesión</a></li>
 
     </ul>
     <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
     
 </div>
 </nav>
-<main>
-<div class="parallax-container">
-      <div class="parallax"><img src="img/Dulcehabitante5.png">
 
-      </div>
+<main>
+    <br><br><br><br>
+    <div class="row">
+
+    </div>
+
+    <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Coloreame!!</a>
+  <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content'>
+    <li ><INPUT class='btn' VALUE="Rojo" onClick="sfondo('RED')"></li>
+    <li><INPUT class='btn' VALUE="Azul" onClick="sfondo('BLUE')"></li>
+    <li text-decoration='none'><INPUT class='btn' VALUE="Verde" onClick="sfondo('GREEN')"></li>
+    <li><INPUT class='btn' VALUE="Naranja" onClick="sfondo('ORANGE')"></li>
+    <li><INPUT class='btn' VALUE="Gris" onClick="sfondo('GRAY')"></li>
+  </ul>
+
+  <label>Selecciona tu fondo:</label>
+  <select class="browser-default" >
+    <option value="" disabled selected>Choose your option</option>
+    <option btn onClick="sfondo('RED')">Verde</option>
+    <option btn onClick="sfondo('BLUE')">Azul</option>
+    <option btn onClick="sfondo('YELLOW')">Amarillo</option> 
+    </form>
+</select>
+<FORM class="center-align">
+<INPUT TYPE="button" VALUE="Rosso" onClick="sfondo('RED')">
+
+<INPUT TYPE="button" VALUE="Blue" onClick="sfondo('BLUE')">
+
+<INPUT TYPE="button" VALUE="Arancio" onClick="sfondo('ORANGE')">
+
+<INPUT TYPE="button" VALUE="Verde" onClick="sfondo('GREEN')">
+
+<INPUT TYPE="button" VALUE="Nero" onClick="sfondo('BLACK')">
+
+<INPUT TYPE="button" VALUE="Grigio" onClick="sfondo('GRAY')">
+
+<INPUT TYPE="button" VALUE="Giallo" onClick="sfondo('YELLOW')">
+
+<INPUT TYPE="button" VALUE="bianco" onClick="sfondo('WHITE')">
+
+</FORM>
 </main>
 <footer class="page-footer black">
   <div class="container">
@@ -86,18 +125,19 @@
 </body>
 <script src="jquery-3.2.1.min.js"></script>
 <script src="js/materialize.min.js"></script>
-<script>
+<script src="fondo.js"></script>
+<script >
     $('.carousel').carousel();
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
-      $('.pushpin-demo-nav').each(function() {
-    var $this = $(this);
-    var $target = $('#' + $(this).attr('data-target'));
-    $this.pushpin({
-      top: $target.offset().top,
-      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    $('.pushpin-demo-nav').each(function() {
+        var $this = $(this);
+        var $target = $('#' + $(this).attr('data-target'));
+        $this.pushpin({
+          top: $target.offset().top,
+          bottom: $target.offset().top + $target.outerHeight() - $this.height()
+      });
     });
-  });
 </script>
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 </html>

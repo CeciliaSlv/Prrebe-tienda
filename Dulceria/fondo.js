@@ -1,0 +1,1 @@
+function sfondo(colore) {document.bgColor = colore;}
