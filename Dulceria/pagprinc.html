@@ -57,47 +57,29 @@
 </nav>
 
 <main>
-    <br><br><br><br>
-    <div class="row">
-
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/cafe.jpg"></div>
     </div>
-
-    <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Coloreame!!</a>
-  <!-- Dropdown Structure -->
-    <ul id='dropdown1' class='dropdown-content'>
-    <li ><INPUT class='btn' VALUE="Rojo" onClick="sfondo('RED')"></li>
-    <li><INPUT class='btn' VALUE="Azul" onClick="sfondo('BLUE')"></li>
-    <li text-decoration='none'><INPUT class='btn' VALUE="Verde" onClick="sfondo('GREEN')"></li>
-    <li><INPUT class='btn' VALUE="Naranja" onClick="sfondo('ORANGE')"></li>
-    <li><INPUT class='btn' VALUE="Gris" onClick="sfondo('GRAY')"></li>
+    <div class="row">
+         <div class="col s12 l6 center-align">
+            <img src="img/Logo.png" alt="logo">
+             <ul class="collapsible popout" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">filter_drama</i>Misión</div>
+      <div class="collapsible-body white"><span>Ofrecer productos en gran variedad y precio, utilizando materia prima de la más alta calidad para satisfacer las necesidades y exigencias de nuestros distinguidos clientes.
+Apoyados con una continua asesoría que asegura una mayor productividad y optima elaboración de los mismos.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">place</i>Vision</div>
+      <div class="collapsible-body white"><span>Será una empresa altamente competitiva, innovadora y sobresaliente en el mercado nacional de panaderías alcanzando un alto nivel de desarrollo humano y tecnológico.</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">whatshot</i>Objetivo</div>
+      <div class="collapsible-body white"><span> Nuestro objetivo es que la gente se sienta a gusto e identificada con nuestros productos y que los clientes conozcan los servicios.</span></div>
+    </li>
   </ul>
-
-  <label>Selecciona tu fondo:</label>
-  <select class="browser-default" >
-    <option value="" disabled selected>Choose your option</option>
-    <option btn onClick="sfondo('RED')">Verde</option>
-    <option btn onClick="sfondo('BLUE')">Azul</option>
-    <option btn onClick="sfondo('YELLOW')">Amarillo</option> 
-    </form>
-</select>
-<FORM class="center-align">
-<INPUT TYPE="button" VALUE="Rosso" onClick="sfondo('RED')">
-
-<INPUT TYPE="button" VALUE="Blue" onClick="sfondo('BLUE')">
-
-<INPUT TYPE="button" VALUE="Arancio" onClick="sfondo('ORANGE')">
-
-<INPUT TYPE="button" VALUE="Verde" onClick="sfondo('GREEN')">
-
-<INPUT TYPE="button" VALUE="Nero" onClick="sfondo('BLACK')">
-
-<INPUT TYPE="button" VALUE="Grigio" onClick="sfondo('GRAY')">
-
-<INPUT TYPE="button" VALUE="Giallo" onClick="sfondo('YELLOW')">
-
-<INPUT TYPE="button" VALUE="bianco" onClick="sfondo('WHITE')">
-
-</FORM>
+         </div>
+    </div>   
 </main>
 <footer class="page-footer black">
   <div class="container">
@@ -105,6 +87,17 @@
       <div class="col l6 s12">
         <h5 class="white-text">Footer Content</h5>
         <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+        <a class='dropdown-button btn' href='#' data-activates='dropdown1'>Coloreame!!</a>
+    <!-- Dropdown Structure -->
+    <ul id='dropdown1' class='dropdown-content black'>
+        <li><INPUT class='btn' VALUE="Rojo" onClick="sfondo('RED')"></li>
+        <li><INPUT class='btn' VALUE="Azul" onClick="sfondo('BLUE')"></li>
+        <li><INPUT class='btn' VALUE="Verde" onClick="sfondo('GREEN')"></li>
+        <li><INPUT class='btn' VALUE="Naranja" onClick="sfondo('ORANGE')"></li>
+        <li><INPUT class='btn' VALUE="Gris" onClick="sfondo('GRAY')"></li>
+        <li><INPUT class='btn' VALUE="Amarillo" onClick="sfondo('YELLOW')"></li>
+        <li><INPUT class='btn' VALUE="Blanco" onClick="sfondo('WHITE')"></li>
+    </ul>
     </div>
     <div class="col l4 offset-l2 s12">
         <h5 class="white-text">Links</h5>
@@ -117,6 +110,7 @@
 </div>
 <div class="footer-copyright">
     <div class="container">
+
         © 2017 Copyright Text
         <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
     </div>
@@ -127,6 +121,7 @@
 <script src="js/materialize.min.js"></script>
 <script src="fondo.js"></script>
 <script >
+    $('.collapsible').collapsible();
     $('.carousel').carousel();
     $(".button-collapse").sideNav();
     $('.parallax').parallax();
