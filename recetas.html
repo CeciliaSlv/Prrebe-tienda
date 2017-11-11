@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Matamis Vékony</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body class="Fondo">
+    <nav>
+        <div class="nav-wrapper black">
+
+            <div class="container left-align">
+              <a href="#!" class="brand-logo" >Recetas</a>  
+          </div>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="waves-effect" href="pagprinc.html">Inicio</a></li>
+            <li><a class="waves-effect" href="productos.html">Productos</a></li>
+            <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
+        </ul>
+        <ul id="slide-out" class="side-nav">
+            <li><div class="user-view">
+              <div class="background">
+                <img src="img/fondo1.jpg">
+            </div>
+            <a href="#!user"><img class="circle" src="img/Dulcehabitante4.png"></a>
+            <div class="chip lighten-5 z-depth-1">
+                <img src="img/Dulcehabitante.png" alt="Contact Ceci Silva" href="https://www.facebook.com/cecilia.luna.31337">
+                Ceci Silva
+            </div>
+            <div class="chip lighten-5 z-depth-1">
+                <img src="img/Dulcehabitante2.png" alt="Contact Vicente andrade">
+                Vic. Andrade
+            </div>
+            <div class="chip">
+                <img src="img/Dulcehabitante3.png" alt="Contact Balbu">
+                Balbu
+            </div>
+            <a href="#!name"><span class="white-text name">John Doe</span></a>
+            <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+        </div></li>
+        <li><a href="index.html"><i class="material-icons active">cloud</i>Recetas</a></li>
+        <li><a class="waves-effect" href="pagprinc.html">Inicio</a></li>
+            <li><a class="waves-effect" href="productos.html">Productos</a></li>
+            <li><a class="waves-effect" href="contacto.html">Contacto</a></li>
+        <li><div class="divider"></div></li>
+        <li><a class="waves-effect" href="mobile.html">Cerrar Sesión</a></li>
+
+    </ul>
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    
+</div>
+</nav>
+<main>
+<div class="parallax-container">
+      <div class="parallax"><img src="img/Dulcehabitante5.png">
+
+      </div>
+</main>
+
+
+<div>
+      <div class="card">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="img/pie.jpg">
+          </div>
+          <div class="card-content">
+            <span class="card-title activator grey-text text-darken-4">Pie de calabaza<i class="material-icons right">more_vert</i></span>
+            
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>ingredientes</p>
+            <p>1 1/2 taza calabaza cocida</p>
+            <p>4 huevos</p>
+            <p>1 taza de leche condensada</p>
+            <p>1 cucharada de canela en polvo</p>
+            <p>1 cucharada jengibre en polvo</p>
+            <p>2 cucharadas aceite vegetal</p>
+            <p>1/3 taza harina</p>
+            <p>3 cucharadas de mantequilla</p>
+            <br>
+            <br>
+            <p>
+              Pasos
+
+            </p>
+            <p>1. Precalienta el horno a 150°</p>
+            <p>2. En un molde apto para horno, con la mantequilla cubre y enharina. Reserva.</p>
+            <p>Pon en el vaso de la licuadora todos los ingredientes. Licúa muy bien hasta obtener una crema tersa.</p>
+            <p>Vierte en el molde y hornea por unos 35 minutos aproximadamente. Haz la prueba del palillo para cerciorarte que esté perfectamente cocido.</p>
+            <p>Buen provecho.</p>
+
+        </div>
+    
+  </div>
+  </div>
+
+<footer class="page-footer black">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Matamis Vékony</h5>
+        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+    </div>
+    <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Contacto</h5>
+        <ul>
+          <li></li>
+          <li><a class="grey-text text-lighten-3" href="#!">https://www.facebook.com/diana.balbuena.1293</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">https://www.facebook.com/cecilia.luna.31337</a></li>
+          <li><a class="grey-text text-lighten-3" href="#!">https://www.face</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+<div class="footer-copyright">
+    <div class="container">
+        © 2017 Copyright Matamis Vékony Inc- Todos los derechos reservados.
+        <a class="grey-text text-lighten-4 right" href="#!"></a>
+    </div>
+</div>
+</footer>
+</body>
+<script src="jquery-3.2.1.min.js"></script>
+<script src="js/materialize.min.js"></script>
+<script>
+    $('.carousel').carousel();
+    $(".button-collapse").sideNav();
+    $('.parallax').parallax();
+      $('.pushpin-demo-nav').each(function() {
+    var $this = $(this);
+    var $target = $('#' + $(this).attr('data-target'));
+    $this.pushpin({
+      top: $target.offset().top,
+      bottom: $target.offset().top + $target.outerHeight() - $this.height()
+    });
+  });
+</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+</html>
